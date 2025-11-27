@@ -248,7 +248,7 @@ with col2:
    
     if file_source is not None:
         # Display the selected image (from camera or upload)
-        st.image(file_source, caption='Weld Image Preview', use_column_width=True)
+        st.image(file_source, caption='Weld Image Preview', use_container_width=True)
 
         # --- Analysis Button ---
         analyze_button_clicked = st.button(
