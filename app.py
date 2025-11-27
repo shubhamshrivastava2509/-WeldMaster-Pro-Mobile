@@ -172,9 +172,9 @@ def call_gemini_api(prompt: str, image_bytes: bytes):
         required=["weldJointType", "weldProcessDescription", "dimensionToMeasure", "defectPrediction", "dimensionEstimation", "weakJointAreaDescription"]
     )
    
-    system_instruction = ("You are a certified welding inspector (CWI) and AI assistant specializing in image analysis. "
+    system_instruction = ["You are a certified welding inspector (CWI) and AI assistant specializing in image analysis. "
                           "Your task is to analyze an image of a weld joint. Respond ONLY with a valid JSON object matching the provided schema. "
-                          "Be specific and use correct welding terminology.")
+                          "Be specific and use correct welding terminology."]
 
     try:
         # Load the image using PIL
